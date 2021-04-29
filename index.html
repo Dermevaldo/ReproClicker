@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ReproClicker</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/ReproClicker.css">
+</head>
+<body onload="iniciar()">
+	<div class="main">
+		<div class="view">
+			<center><img class="papel" src="papel.png" onclick="clica()"></center>
+			<div class="puntuation"><center><h2 class="ponto"></h2></center></div>
+			<div class="botao" onclick="trocar()" style="color:white"><p>Upgrades/Itens</p></div>
+			
+		</div>
+		<div class="recursos">
+			<div class="item1 item" onclick="item1T()">
+				<img src="chars/Trap.png" class="imagem" style="float: left">
+				<h3>Trap</h3><b class="item1Q quantidade"></b><br><br>
+				<p>Trap é um reprovador nato, vai te ajudar a reprovar e te zoar de brinde.<br>Custo:<b class="item1C"></b></p>
+			</div>
+			<div class="item2 item" onclick="item2T()">
+				<img src="chars/Benevaldo.gif" class="imagem" style="float: left">
+				<h3>Beneval</h3><b class="item2Q quantidade"></b><br><br>
+				<p>Benevaldo é um reprovador continuo, vai reprovar enquanto perde cabelos.Custo: <b class="item2C"></b></p>
+			</div>
+			<div class="item3 item" onclick="item3T()">
+				<img src="chars/Drougas.png" class="imagem" style="float: left">
+				<h3>Drougas</h3><b class="item3Q quantidade"></b><br><br>
+				<p>Mc Doguinhas sempre esteve aqui reprovando e tacando molotov de sprite nos corredores.<br>Custo:<b class="item3C"></b></p>
+			</div>
+			<div class="item4 item" onclick="item3T()">
+				<img src="chars/peduel.png" class="imagem" style="float: left">
+				<h3>Peduel</h3><b class="item4Q quantidade"></b><br><br>
+				<p>Peduel é um rapaz que se preocupa com as crianças e acaba reprovando continuamente.<br>Custo:<b class="item4C"></b></p>
+			</div>
+		</div>
+		<div class="upgrade">
+			<div class="upgrade1 item" onclick="item1UCompra()">
+				<img src="chars/sword.png" class="imagem" style="float: left">
+				<h3>Trap</h3></b><br><br>
+				<p class="item1UTexto"></p>  Custo:<b class="item1UCusto"></b>
+			</div>
+			<div class="upgrade2 item" onclick="item2UCompra()">
+				<img src="chars/Raposinha.png" class="imagem" style="float: left">
+				<h3>Beneval</h3></b><br><br>
+				<p class="item2UTexto"></p>  Custo:<b class="item2UCusto"></b>
+			</div>
+			<div class="upgrade3 item" onclick="item3UCompra()">
+				<img src="chars/suplemento.png" class="imagem" style="float: left">
+				<h3>Drougas</h3></b><br><br>
+				<p class="item3UTexto"></p>  Custo:<b class="item3UCusto"></b>
+			</div>
+				<div class="upgrade4 item" onclick="item4UCompra()">
+				<img src="chars/bala.png" class="imagem" style="float: left">
+				<h3>Peduel</h3></b><br><br>
+				<p class="item4UTexto"></p>  Custo:<b class="item4UCusto"></b>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="js/TextosUpgrade.js"></script>
+<script type="text/javascript" src="js/ReproClicker.js"></script>
+<script type="text/javascript" src="js/upgrade2.js"></script>
+<script type="text/javascript" src="js/upgrade3.js"></script>
+<script type="text/javascript" src="js/upgrade4.js"></script>
+<script type="text/javascript" src="js/Click.js"></script>
+<script type="text/javascript" src="js/auto.js"></script>
+</body>
+</html>
