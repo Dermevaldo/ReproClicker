@@ -1,0 +1,2 @@
+Esses arquivos dizem respeito aos personagens e upgrades.
+Criados utilizando RealWorld Cursor Editor.
