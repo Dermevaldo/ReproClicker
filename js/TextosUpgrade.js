@@ -1,0 +1,4 @@
+var Upgrade1Texto=["Trap está em Calculo 1, as reprovações agora serão duplicadas.","Trap tomou um fora, as reprovações dele valem o triplo.","Trap é misógino agora, as reprovações agora valem o quadruplo."];
+var Upgrade2Texto=["Beneval arranjou uma 'webnamorada',agora ele reprova o dobro.","Benevaldo está perdendo cabelos pelo estresse, ele reprova o triplo.","Beneval foi corno, agora está reprovando o quadruplo pela saudade dela."];
+var Upgrade3Texto=["Seu streamer está fazendo rerun, agora ele reprova o dobro.","Pandemia chegou e ele se tornou mudo nas aulas, está reprovando o triplo.","Ele virou Zé bombinha e passou a reprovar o quadruplo."];
+var Upgrade4Texto=["Peduel comprou uma van escolar,agora ele reprova mais por segundo.","Peduel viu uma garota e está sorridente,sua reprovação aumentou.","Peduel pagou a internet da Ex, a sua reprovação chegou ao ápice."]
