@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'FontFoda';
+  src:url('Right Chalk.ttf') format('truetype');
+}
+*{
+	padding: 0px;
+	 -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+.main{
+	border-style: double;
+	border-width: 1px;
+	box-shadow: all;
+	background-color: blue;
+	height: 98vh;
+	width:  98vw;
+}
+.recursos{
+	width: 60%;
+	height: 100%;
+	background-color: white;
+	border-width: 1px;
+	box-shadow: all;
+	float: right;
+}
+.upgrade{
+	width: 60%;
+	height: 100%;
+	background-color: white;
+	border-width: 1px;
+	box-shadow: all;
+	float: right;
+}
+.view{
+	float: left;
+	width:20vh;
+
+}
+.papel{
+	  margin-left: auto;
+  margin-right: auto;
+	animation-duration: 50%;
+	width: 60vh;
+}
+.ponto{
+	font-family: FontFoda;
+	color: white;
+	text-shadow: 1px 1px gray;
+
+}
+.puntuation{
+	width: 60vw;
+	align-items: center;
+}
+h3{
+	float: left;
+	width: 4vw;
+	height: 1vh;
+}
+.item{
+	border-style: solid;
+	border-radius: 5px;
+	border-color: rgba(0,0,0,0.5);
+}
+.item1C{
+	float: left;
+	padding-top: 25px;
+}
+.imagem{
+	max-width: 3vw;
+	box-shadow: 1px 1px;
+	border-radius: 25px;
+	padding: 5\px;
+}
+.quantidade{
+	float: right;
+	font-size: 25px;
+}
