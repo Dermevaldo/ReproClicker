@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'FontFoda';
-  src:url('Right Chalk.ttf') format('truetype');
+	font-family: 'FontFoda';
+	src:url('Right Chalk.ttf') format('truetype');
 }
 *{
 	padding: 0px;
-	 -webkit-user-select: none;  
-  -moz-user-select: none;    
-  -ms-user-select: none;      
-  user-select: none;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
 }
 .main{
 	border-style: double;
