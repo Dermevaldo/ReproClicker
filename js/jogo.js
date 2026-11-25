@@ -134,7 +134,7 @@ function criarCards() {
 		cardUp.className = "item";
 		cardUp.id = "upgrade-" + p.id;
 		cardUp.innerHTML =
-			'<img class="imagem icone" src="">' +
+			'<img class="imagem icone" src="" onload="this.classList.toggle(\'pixel\', this.naturalWidth < 64)">' +
 			'<div class="info">' +
 				'<h3>' + p.nome + ' <small class="nivel"></small></h3>' +
 				'<p class="texto"></p>' +
@@ -164,7 +164,8 @@ function atualizarTela() {
 			return;
 		}
 		cardUp.style.display = "";
-		cardUp.querySelector(".icone").src = up.icone;
+		var icone = cardUp.querySelector(".icone");
+		if (icone.getAttribute("src") !== up.icone) icone.src = up.icone;
 		cardUp.querySelector(".texto").textContent = up.texto;
 		cardUp.querySelector(".nivel").textContent = (dadosDe(p).nivel + 1) + "/" + p.upgrades.length;
 		cardUp.querySelector(".custo").textContent = formatar(up.custo);
