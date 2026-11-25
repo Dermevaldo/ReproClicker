@@ -3,22 +3,35 @@
 <head>
 	<title>ReproClicker</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#2b2118">
 	<link rel="stylesheet" type="text/css" href="css/Reproclicker.css">
 </head>
 <body>
-	<div class="main">
-		<div class="view">
-			<h2 class="ponto"></h2>
+	<div class="app">
+		<!-- Quadro-negro: placar -->
+		<header class="quadro">
+			<h1 class="ponto">0</h1>
 			<p class="rotulo">reprovações</p>
 			<p class="taxas"></p>
-			<img class="papel" src="papel.png" onclick="clicar(event)" draggable="false">
-			<div class="botoes">
-				<button class="botao" onclick="trocarPainel()">Upgrades/Itens</button>
-				<button class="botao secundario" onclick="resetar()">Resetar</button>
+			<button class="menu" onclick="resetar()" title="Resetar progresso">⟲</button>
+		</header>
+
+		<!-- Sala de aula vista de cima. Clicar em qualquer lugar gera reprovações. -->
+		<main class="sala">
+			<div class="sala-conteudo">
+				<div class="mesa-professor">
+					<img src="papel.png" class="papelada" draggable="false">
+				</div>
+				<div class="carteiras"></div>
 			</div>
-		</div>
-		<div class="painel recursos"></div>
-		<div class="painel upgrade"></div>
+		</main>
+
+		<!-- Ficha do personagem (aparece ao dar zoom) -->
+		<section class="ficha">
+			<button class="fechar" onclick="fecharFicha()">✕</button>
+			<div class="ficha-conteudo"></div>
+		</section>
 	</div>
 	<script src="js/personagens.js"></script>
 	<script src="js/jogo.js"></script>

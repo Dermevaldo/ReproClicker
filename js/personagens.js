@@ -106,5 +106,35 @@ var PERSONAGENS = [
 			{ icone: "chars/fabio_carne.png", custo: 400000, mult: 3, texto: "Fabio descobriu que um jogo novo de sua coleção favorita mudou uma mecânica, ele se revolta e agora reprova o triplo em protesto." },
 			{ icone: "chars/fabio_traducao.png", custo: 4000000, mult: 4, texto: "Fabio viu que seu curso está escrito em português e se recusa a continuar, agora reprova 4 vezes mais enquanto tenta traduzir tudo." }
 		]
-	}
+	},
+	{
+		id: "furrycon",
+		nome: "Furrycon",
+		sprite: "chars/mike.png",
+		descricao: "Furrycon é um autista não-assumido que ama animais de estimação, mas não sabe expressar isso.",
+		tipo: "segundo",
+		valor: 120,
+		custo: 20000,
+		crescimento: 1.4,
+		upgrades: [
+			{ icone: "chars/mike_build.png", custo: 100000, mult: 2, texto: "Furrycon descobriu um item quebrado e fica montando build em torno dele, agora reprova o dobro por segundo." },
+			{ icone: "chars/mike_parentes.png", custo: 1000000, mult: 3, texto: "Furrycon voltou a morar com os pais e não consegue parar pra fazer nada porque sempre tem um parente pedindo coisa, reprovando o triplo por segundo." },
+			{ icone: "chars/mike_live.png", custo: 10000000, mult: 4, texto: "Furrycon virou artista streamer e agora reprova 4 vezes mais por ficar desenhando arte furry em live." }
+		]
+	},
+	{
+		id: "actually",
+		nome: "Actually",
+		sprite: "chars/actually.png",
+		descricao: "Actually é um personagem que sempre diz a informações baseadas em Wikis e videos duvidosos.",
+		tipo: "segundo",
+		valor: 300,
+		custo: 60000,
+		crescimento: 1.4,
+		upgrades: [
+			{ icone: "chars/actually_wiki.png", custo: 300000, mult: 2, texto: "Actually leu na wiki e descobriu uma nova forma de reprovar, agora reprova o dobro por segundo." },
+			{ icone: "chars/actually_explica.png", custo: 3000000, mult: 3, texto: "Actually escutou alguem dizendo algo que ele acredita estar errado e não para de explicar, reprovando o triplo por segundo." },
+			{ icone: "chars/actually_prova.png", custo: 30000000, mult: 4, texto: "Actually ficou lendo algo na wiki e demorou a começar a prova, reprovando 4 vezes mais por isso." }
+		]
+	},
 ];
