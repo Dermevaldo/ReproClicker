@@ -1,80 +1,178 @@
 @font-face {
-  font-family: 'FontFoda';
-  src:url('Right Chalk.ttf') format('truetype');
+	font-family: 'FontFoda';
+	src: url('Right Chalk.ttf') format('truetype');
 }
-*{
-	padding: 0px;
-	 -webkit-user-select: none;  
-  -moz-user-select: none;    
-  -ms-user-select: none;      
-  user-select: none;
+
+* {
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-user-select: none;
 }
-.main{
-	border-style: double;
-	border-width: 1px;
-	box-shadow: all;
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: #1b1b2f;
+}
+
+.main {
+	display: flex;
+	height: 100vh;
 	background-color: blue;
-	height: 98vh;
-	width:  98vw;
 }
-.recursos{
-	width: 60%;
-	height: 100%;
-	background-color: white;
-	border-width: 1px;
-	box-shadow: all;
-	float: right;
-}
-.upgrade{
-	width: 60%;
-	height: 100%;
-	background-color: white;
-	border-width: 1px;
-	box-shadow: all;
-	float: right;
-}
-.view{
-	float: left;
-	width:20vh;
 
-}
-.papel{
-	  margin-left: auto;
-  margin-right: auto;
-	animation-duration: 50%;
-	width: 60vh;
-}
-.ponto{
-	font-family: FontFoda;
-	color: white;
-	text-shadow: 1px 1px gray;
+/* ---------- Lado esquerdo: papel e pontuação ---------- */
 
-}
-.puntuation{
-	width: 60vw;
+.view {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	color: white;
 }
-h3{
-	float: left;
-	width: 4vw;
-	height: 1vh;
+
+.ponto {
+	font-family: FontFoda, sans-serif;
+	font-size: 2.5em;
+	margin: 0;
+	text-shadow: 2px 2px gray;
+	text-align: center;
 }
-.item{
-	border-style: solid;
+
+.rotulo {
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.taxas {
+	margin: 5px 0 20px;
+	opacity: 0.8;
+}
+
+.papel {
+	width: min(60vh, 90%);
+	cursor: pointer;
+	transition: transform 0.05s;
+}
+
+.papel:active {
+	transform: scale(0.95);
+}
+
+.botoes {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.botao {
+	font-size: 1em;
+	padding: 10px 20px;
+	color: white;
+	background: rgba(0, 0, 0, 0.3);
+	border: 2px solid white;
 	border-radius: 5px;
-	border-color: rgba(0,0,0,0.5);
+	cursor: pointer;
 }
-.item1C{
-	float: left;
-	padding-top: 25px;
+
+.botao:hover {
+	background: rgba(0, 0, 0, 0.5);
 }
-.imagem{
-	max-width: 3vw;
-	box-shadow: 1px 1px;
-	border-radius: 25px;
-	padding: 5\px;
+
+.botao.secundario {
+	font-size: 0.8em;
+	opacity: 0.7;
 }
-.quantidade{
-	float: right;
+
+/* ---------- Lado direito: personagens e upgrades ---------- */
+
+.painel {
+	width: 45%;
+	overflow-y: auto;
+	background-color: white;
+	padding: 10px;
+}
+
+.escondido {
+	display: none;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px;
+	margin-bottom: 8px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.item:hover {
+	background: #eef;
+}
+
+.item.caro {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.item h3 {
+	margin: 0 0 4px;
+}
+
+.item p {
+	margin: 0 0 4px;
+}
+
+.info {
+	flex: 1;
+}
+
+.detalhe {
+	font-size: 0.9em;
+	color: #444;
+}
+
+.imagem {
+	width: 58px;
+	height: 58px;
+	object-fit: contain;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	padding: 4px;
+	flex-shrink: 0;
+}
+
+/* Mantém pixel art nítida ao ampliar */
+.pixel {
+	image-rendering: pixelated;
+}
+
+.quantidade {
 	font-size: 25px;
+	min-width: 40px;
+	text-align: right;
+}
+
+/* Número que sobe ao clicar */
+.ganho {
+	position: fixed;
+	pointer-events: none;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 2px black;
+	transform: translate(-50%, -50%);
+	animation: subir 0.8s ease-out forwards;
+}
+
+@keyframes subir {
+	to {
+		transform: translate(-50%, -150%);
+		opacity: 0;
+	}
 }
